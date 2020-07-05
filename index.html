@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="jumbo" class="jumbotron">
+        <div class="text-center">
+            <h1 class="display-4">Pokemon API Test</h1>
+        </div>
+    </div>
+    <div id="poke-container">
+
+        <div id="generate" class="text-center">
+            <button id="gen-btn" type="button" class="btn btn-dark">Generate</button>
+        </div>
+
+        <div class="row mx-auto">
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card mb-4">
+                    <img class="card-img-top bg-light img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card card-body mb-2">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/2.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card card-body mb-2">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/3.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card card-body mb-2">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/4.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card card-body mb-2">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/5.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="card card-body mb-2">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/6.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="poke-container">
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">1 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/2.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">2 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/3.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">3 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/4.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">4 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/5.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">5 Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="https://pokeres.bastionbot.org/images/pokemon/6.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">6 Card title</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="//placehold.it/500x270" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">7 Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="//placehold.it/500x300" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">8 Card title</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="//placehold.it/500x270" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">9 Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src="//placehold.it/500x270" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">10 Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        
+        </div> -->
+    </div>
+</body>
+</html>
